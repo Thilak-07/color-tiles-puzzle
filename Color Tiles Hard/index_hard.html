@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Colour Tiles</title>
+    <meta meta="" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="style_hard.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="view_port">
+      <div class="polling_message">Colour Tiles</div>
+      <div class="the-buttons">
+        <button class = "easy">Easy</button>
+        <button class = "hard">Hard</button>
+        <button class = "sound">🔊</button>
+        <button class = "instructions">ℹ️</button>
+      </div>
+      <div class="cylon_eye"></div>
+    </div>
+
+    <div class="body">
+      <div class="solutiongrid"></div>
+      <div class="game">
+        <div class="grid"></div>
+        <div class="footer">
+          <button>Play</button>
+          <span id="move">Moves: 0</span>
+          <span id="time">Time: 0</span>
+        </div>
+      </div>
+    </div>
+
+    <audio class="bgm">
+      <source src="../Elektronomia.mp3" type="audio/mpeg">
+    </audio>
+
+  <script src="main_hard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+html {
+    height: 100%;
+}
+  
+  body {
+    height: 100%;
+    background-image: linear-gradient(#0b012e, #20032e);
+  }
+
+/*Navigation Bar*/
+  .view_port {
+    background-color: #060018;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .polling_message {
+    color: white;
+    font-size: 33px;
+    text-align: center;
+    float: left;
+    margin-left: 2%;
+    margin-top: 3px;
+  }
+
+  .the-buttons {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    float: right;
+    margin-right: 2%;
+    margin-top: -9px;
+  }
+
+  .easy{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    border: 0px;
+    cursor: pointer;
+  }
+
+  .hard{
+    color: rgb(0, 0, 0);
+    margin-right: 45px;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: yellow;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  .sound{
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  .sound:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .instructions{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: yellow;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  .instructions:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(0, 0, 0, .1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+  @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+
+
+/*GAME*/
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  .solutiongrid {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: 25px 25px 25px 25px;
+    grid-template-rows: 25px 25px 25px 25px;
+    grid-gap: 5px 5px;
+    padding: 0px;
+    border: 0px solid #ffffff;
+  }
+
+  .solutiongrid button {
+    background-color: #ffffff;
+    color: #003333;
+    border-radius: 3px;
+    border: 0px solid #363636;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .game {
+    margin-top: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    height: 325px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    background-color: grey;
+    border-radius: 3px;
+    padding: 2px;
+  }
+
+  .grid button {
+    background-color: #ffffff;
+    border: 0px solid #363636;
+    outline: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    margin: 5px;
+    z-index: 2;
+  }
+
+  .black-box {
+    width: 220px;
+    height: 220px;
+    background-color: #000000;
+    margin-top: -325px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .endScreen {
+    background-color: rgb(255, 217, 0);
+    width: 327px;
+    height: 327px;
+    margin-top: -325px;
+    margin-left: -5px;
+    margin-right: -5px;
+    opacity: 0.77;
+    border-radius: 0px;
+    z-index: 3;
+  }
+
+  .message {
+    text-align: center;
+    margin-top: -345px;
+    justify-content: space-between;
+    color:#0c0022;
+    font-size: 50px;
+    z-index: 4;
+  }
+
+  .try-again {
+    padding: 3px 10px;
+    font-family: Monaco, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -250px;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 0, 26);
+    z-index: 5;
+  }
+
+  .try-again:hover {
+    color: #D4EE9F;
+    background-color: #000000;
+  }
+
+
+.footer {
+  margin-top: 9px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.footer button{
+  display: block;
+  margin: auto;
+  padding: 3px 10px;
+  font-family: Monaco, monospace;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: #e5ff00;
+}
+
+.footer button:hover {
+  color: #D4EE9F;
+  background-color: #000000;
+}
+
+.footer span {
+  flex: 1px;
+  text-align: center;
+  font-size: 15px;
+  color: #D4EE9F;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+
+
+
