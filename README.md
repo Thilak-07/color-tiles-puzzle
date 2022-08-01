@@ -6,5 +6,5 @@ You can use mouse clicks or Arrow keys to move the tiles.
 Play Colour Tiles - [Click Here](https://thilak-07.github.io/Colour_Tiles/)
 
 ## Screenshots
-![App Screenshot](https://github.com/Thilak-07/Delta_Web-Dev_Task-1/blob/main/Screenshots/The%20Game.png)
-![App Screenshot](https://github.com/Thilak-07/Delta_Web-Dev_Task-1/blob/main/Screenshots/You%20Win.png)
+![App Screenshot](https://github.com/Thilak-07/Colour_Tiles/blob/main/Screenshots/The%20Game.png)
+![App Screenshot](https://github.com/Thilak-07/Colour_Tiles/blob/main/Screenshots/You%20Win.png)
